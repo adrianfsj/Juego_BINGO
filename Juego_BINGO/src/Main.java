@@ -5,7 +5,39 @@ public class Main {
 
 
     public static void main(String[] args) {
-    	//Vamos con el codigo del juego
+        
+        
+    	//Primero vamos a hacer que el usuario se registre
+    	Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Registro de Usuario");
+        System.out.println("-------------------");
+
+        System.out.print("Nombre: ");
+        String nombre = scanner.nextLine();
+
+        System.out.print("Apellidos: ");
+        String apellidos = scanner.nextLine();
+
+        System.out.print("Correo electrónico: ");
+        String correoElectronico = scanner.nextLine();
+
+        System.out.print("Contraseña: ");
+        String contrasena = scanner.nextLine();
+
+        System.out.print("Edad: ");
+        int edad = scanner.nextInt();
+        scanner.nextLine(); 
+
+        // Crear un objeto Usuario
+        Usuario usuario = new Usuario(nombre, apellidos, correoElectronico, contrasena, edad);
+
+       
+        System.out.println("Usuario registrado exitosamente:");
+        System.out.println(usuario);
+   	
+
+        //Vamos con el codigo del juego
     	
     	
     	
